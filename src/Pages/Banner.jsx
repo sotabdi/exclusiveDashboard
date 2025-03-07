@@ -1,3 +1,5 @@
+import DataTable from "@/Components/DataTable";
+import { Button } from "@/Components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 const Banner = () => {
@@ -47,6 +49,10 @@ const Banner = () => {
           </div>
           <input id="dropzone-file" type="file" class="hidden" />
         </label>
+      </div>
+      <Button className="cursor-pointer mt-4">Upload</Button>
+      <div className="mt-6 h-[200px]">
+      <DataTable/>
       </div>
     </div>
   );
